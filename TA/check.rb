@@ -15,21 +15,6 @@ def read_file
   return a
 end
 
-def read_test
-  a = []
-  File.open(ARGV[1]){|f|
-    f.each_line do |line|
-	  line.slice!('1')
-	  line.slice!('2')
-	  line.slice!('3')
-	  line.slice!('4')
-	  line.slice!('5')
-	  a.push(line)
-	end
-  }
-  return a
-end
-
 def flat(a,b)
   return a.push(b).flatten!
 end
@@ -53,7 +38,27 @@ def check2(a)
   end
 end
 
+def barcheck(a)
+  for var in a do
+    if var.include?("ー")
+      puts var
+    end
+  end
+end
+
+def checkblank(a)
+  for var in a do
+    if var.include?("　")
+      puts var
+    end
+  end
+end
+
 puts "テストとデータのチェック"
-puts check(flat(read_file,read_test))
+puts check(flat(read_file,read_file))
 puts "データとデータのチェック"
 check2(read_file)
+puts "空白チェック"
+checkblank(read_file)
+puts "ーチェック"
+barcheck(read_file)
