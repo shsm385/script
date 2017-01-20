@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<root>
+    <list>
+	        <item>
+			            <name>WindowsMouseButton</name>
+						            <identifier>remap.mouse_mouse_button</identifier>
+									            <autogen>
+												                --PointingButtonToKey--
+																                PointingButton::BUTTON4,
+																				                KeyCode::CURSOR_LEFT,
+																								                ModifierFlag::CONTROL_L
+																												            </autogen>
+																															            <autogen>
+																																		                --PointingButtonToKey--
+																																						                PointingButton::BUTTON5,
+																																										                KeyCode::CURSOR_RIGHT,
+																																														                ModifierFlag::CONTROL_L
+																																																		            </autogen>
+																																																					        </item>
+																																																							    </list>
+																																																								</root>
