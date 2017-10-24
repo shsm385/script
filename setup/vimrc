@@ -1,0 +1,28 @@
+"setting"
+set fenc=utf-8
+set nobackup
+set noswapfile
+set autoread
+set hidden
+set showcmd
+
+
+"view"
+set number
+set title 
+syntax on 
+set smartindent
+set cursorline
+"set cursorcolumn
+set virtualedit=onemore
+set showmatch
+set laststatus=2
+set wildmode=list:longest
+
+"tab"
+set list listchars=tab:\▸\-
+set expandtab
+set tabstop=2
+set shiftwidth=2
+
+ 
